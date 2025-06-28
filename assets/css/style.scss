@@ -120,10 +120,19 @@ body {
   font-weight: 600;
   transition: all 0.3s ease;
   border: 2px solid var(--glow-purple);
-  background: linear-gradient(45deg, var(--glow-primary), var(--glow-secondary));
-  color: var(--glow-pink) !important;
+  background: 
+    linear-gradient(45deg, rgba(255, 20, 147, 0.8), rgba(255, 20, 147, 0.6)),
+    linear-gradient(45deg, var(--glow-primary), var(--glow-secondary));
+  color: white !important;
   box-shadow: 0 4px 15px rgba(191, 64, 255, 0.3);
-  text-shadow: 0 0 5px rgba(255, 20, 147, 0.3);
+  text-shadow: 0 0 8px rgba(255, 20, 147, 0.6);
+  -webkit-background-clip: border-box !important;
+  background-clip: border-box !important;
+}
+
+/* Ensure button text is always white to show against gradient */
+.btn, .btn-primary, .btn-secondary {
+  color: white !important;
 }
 
 .btn:hover,
@@ -136,12 +145,14 @@ body {
 .btn-secondary:active,
 .btn-secondary:focus {
   transform: translateY(-2px);
-  background: linear-gradient(45deg, var(--glow-primary), var(--glow-secondary));
-  color: var(--glow-purple) !important;
+  background: 
+    linear-gradient(45deg, rgba(191, 64, 255, 0.8), rgba(191, 64, 255, 0.6)),
+    linear-gradient(45deg, var(--glow-primary), var(--glow-secondary));
+  color: white !important;
   border: 2px solid var(--glow-pink);
   box-shadow: 0 8px 25px rgba(255, 20, 147, 0.4);
   text-decoration: none;
-  text-shadow: 0 0 8px rgba(191, 64, 255, 0.4);
+  text-shadow: 0 0 10px rgba(191, 64, 255, 0.8);
 }
 
 /* Feature sections */
