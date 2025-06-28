@@ -6,6 +6,11 @@ gem "jekyll", "~> 4.3.0"
 # Theme
 gem "minima", "~> 2.5"
 
+# Required for Ruby 3.4+ compatibility
+gem "logger"
+gem "csv"
+gem "base64"
+
 # Plugins
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
