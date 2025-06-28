@@ -39,7 +39,8 @@
 
 /* Main content */
 body {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: linear-gradient(135deg, var(--glow-dark) 0%, #2d2d2d 100%);
+  color: var(--glow-light);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -132,21 +133,22 @@ body {
 }
 
 .feature-card {
-  background: white;
+  background: linear-gradient(135deg, #2d2d2d 0%, #3d3d3d 100%);
+  color: var(--glow-light);
   padding: 2rem;
   border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   border-left: 4px solid var(--glow-primary);
   transition: transform 0.3s ease;
 }
 
 .feature-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
 }
 
 .feature-card h3 {
-  color: var(--glow-secondary);
+  color: var(--glow-primary);
   margin-bottom: 1rem;
 }
 
@@ -172,7 +174,7 @@ body {
 
 /* Content styling */
 .post-content h1, .post-content h2, .post-content h3 {
-  color: var(--glow-secondary);
+  color: var(--glow-primary);
 }
 
 .post-content h1 {
@@ -180,13 +182,18 @@ body {
   padding-bottom: 0.5rem;
 }
 
+.post-content {
+  color: var(--glow-light);
+}
+
 /* Links */
 a {
-  color: var(--glow-secondary);
+  color: var(--glow-primary);
 }
 
 a:hover {
-  color: var(--glow-primary);
+  color: var(--glow-secondary);
+  text-shadow: 0 0 5px rgba(0, 212, 255, 0.3);
 }
 
 /* Code blocks */
@@ -194,6 +201,55 @@ pre, code {
   background: var(--glow-dark);
   color: var(--glow-light);
   border: 1px solid var(--glow-primary);
+}
+
+/* Additional dark theme styling */
+.wrapper {
+  color: var(--glow-light);
+}
+
+.main-content {
+  background: transparent;
+}
+
+/* Ensure all text is readable on dark background */
+p, li, td, th {
+  color: var(--glow-light);
+}
+
+/* Style tables for dark theme */
+table {
+  background: var(--glow-dark);
+  border: 1px solid var(--glow-primary);
+}
+
+th {
+  background: linear-gradient(135deg, #2d2d2d 0%, #3d3d3d 100%);
+  color: var(--glow-primary);
+  border-bottom: 2px solid var(--glow-primary);
+}
+
+td {
+  border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+/* Blockquotes */
+blockquote {
+  background: linear-gradient(135deg, #2d2d2d 0%, #3d3d3d 100%);
+  border-left: 4px solid var(--glow-primary);
+  color: var(--glow-light);
+}
+
+/* Form elements */
+input, textarea, select {
+  background: var(--glow-dark);
+  color: var(--glow-light);
+  border: 1px solid var(--glow-primary);
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--glow-primary);
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
 }
 
 /* Responsive design */
