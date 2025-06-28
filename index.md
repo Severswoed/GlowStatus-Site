@@ -57,10 +57,10 @@ title: Home
   </div>
 </div>
 
-<div style="background: white; padding: 4rem 0; margin-top: 4rem;">
+<div style="background: linear-gradient(135deg, #2d2d2d 0%, #3d3d3d 100%); padding: 4rem 0; margin-top: 4rem; border-radius: 20px; border: 1px solid rgba(0, 212, 255, 0.2);">
   <div class="wrapper" style="text-align: center;">
-    <h2>About the Creator</h2>
-    <p style="font-size: 1.1rem; max-width: 600px; margin: 0 auto; line-height: 1.6;">
+    <h2 style="color: #00d4ff;">About the Creator</h2>
+    <p style="font-size: 1.1rem; max-width: 600px; margin: 0 auto; line-height: 1.6; color: #f8f9fa;">
       GlowStatus is developed by <a href="https://github.com/{{ site.github_username }}">{{ site.github_username }}</a>, 
       a passionate developer dedicated to creating tools that enhance productivity and user experience. 
       This project represents a commitment to building software that's both powerful and user-friendly.
@@ -70,9 +70,9 @@ title: Home
       <a href="https://github.com/{{ site.github_username }}" class="btn btn-secondary">Follow on GitHub</a>
     </div>
     
-    <h3 style="margin-top: 3rem;">Support the Project</h3>
-    <p>If you find GlowStatus useful, consider:</p>
-    <ul style="list-style: none; padding: 0; margin-top: 1rem;">
+    <h3 style="margin-top: 3rem; color: #00d4ff;">Support the Project</h3>
+    <p style="color: #f8f9fa;">If you find GlowStatus useful, consider:</p>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #f8f9fa;">
       <li>⭐ Starring the repository on GitHub</li>
       <li>🐛 Reporting bugs or suggesting features</li>
       <li>🔄 Sharing GlowStatus with others</li>
