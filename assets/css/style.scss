@@ -26,6 +26,9 @@ div, section, article, main {
   --glow-primary: #00d4ff; /* Bright cyan from logo */
   --glow-secondary: #0099cc; /* Darker cyan */
   --glow-accent: #ff6b35; /* Orange accent */
+  --glow-purple: #bf40ff; /* Electric purple from logo */
+  --glow-pink: #ff1493; /* Electric pink for links */
+  --glow-electric-blue: #00bfff; /* Electric blue for links */
   --glow-dark: #1a1a1a; /* Dark background */
   --glow-light: #f8f9fa; /* Light text */
   --glow-gray: #6c757d; /* Gray text */
@@ -45,13 +48,14 @@ div, section, article, main {
 }
 
 .site-nav .page-link {
-  color: var(--glow-light) !important;
+  color: var(--glow-electric-blue) !important;
   transition: all 0.3s ease;
+  font-weight: 500;
 }
 
 .site-nav .page-link:hover {
-  color: var(--glow-primary) !important;
-  text-shadow: 0 0 5px rgba(0, 212, 255, 0.5);
+  color: var(--glow-pink) !important;
+  text-shadow: 0 0 10px rgba(255, 20, 147, 0.6);
 }
 
 /* Main content */
@@ -133,14 +137,17 @@ body {
 
 .btn-secondary {
   background: transparent;
-  color: var(--glow-primary);
-  border: 2px solid var(--glow-primary);
+  color: var(--glow-purple);
+  border: 2px solid var(--glow-purple);
+  box-shadow: 0 0 10px rgba(191, 64, 255, 0.3);
 }
 
 .btn-secondary:hover {
-  background: var(--glow-primary);
+  background: var(--glow-purple);
   color: white;
   text-decoration: none;
+  box-shadow: 0 0 20px rgba(191, 64, 255, 0.6);
+  transform: translateY(-2px);
 }
 
 /* Feature sections */
@@ -171,8 +178,9 @@ body {
 }
 
 .feature-card h3 {
-  color: var(--glow-primary);
+  color: var(--glow-purple);
   margin-bottom: 1rem;
+  text-shadow: 0 0 10px rgba(191, 64, 255, 0.4);
 }
 
 /* Footer */
@@ -187,11 +195,13 @@ body {
 }
 
 .footer-col a {
-  color: var(--glow-primary);
+  color: var(--glow-electric-blue) !important;
+  transition: all 0.3s ease;
 }
 
 .footer-col a:hover {
-  color: var(--glow-secondary);
+  color: var(--glow-pink) !important;
+  text-shadow: 0 0 8px rgba(255, 20, 147, 0.6);
   text-decoration: none;
 }
 
@@ -226,12 +236,38 @@ strong, b {
 
 /* Links */
 a {
-  color: var(--glow-primary);
+  color: var(--glow-electric-blue) !important;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 a:hover {
-  color: var(--glow-secondary);
-  text-shadow: 0 0 5px rgba(0, 212, 255, 0.3);
+  color: var(--glow-pink) !important;
+  text-shadow: 0 0 8px rgba(255, 20, 147, 0.6);
+  text-decoration: none;
+}
+
+/* Special link styling for better visibility */
+a:visited {
+  color: var(--glow-purple) !important;
+}
+
+a:visited:hover {
+  color: var(--glow-pink) !important;
+}
+
+/* Enhanced link visibility for content areas */
+.post-content a, .wrapper a, .hero a:not(.btn) {
+  color: var(--glow-electric-blue) !important;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(0, 191, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.post-content a:hover, .wrapper a:hover, .hero a:not(.btn):hover {
+  color: var(--glow-pink) !important;
+  border-bottom: 1px solid rgba(255, 20, 147, 0.6);
+  text-shadow: 0 0 8px rgba(255, 20, 147, 0.4);
 }
 
 /* Code blocks */

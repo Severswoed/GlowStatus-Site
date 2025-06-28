@@ -1,8 +1,8 @@
 # Jekyll configuration for GlowStatus Site
 title: "GlowStatus"
 description: "A dynamic status tracker for your desktop"
-url: "https://severswoed.github.io"
-baseurl: "/GlowStatus-Site"
+url: "https://www.glowstatus.app"
+baseurl: ""
 
 # Build settings
 markdown: kramdown
@@ -44,4 +44,4 @@ header_pages:
 app_name: "GlowStatus"
 app_version: "1.0.0"
 company_name: "GlowStatus"
-contact_email: "contact@glowstatus.app"
+contact_email: "glowstatus.app@gmail.com"

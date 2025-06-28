@@ -57,9 +57,9 @@ title: Home
   </div>
 </div>
 
-<div style="background: linear-gradient(135deg, #2d2d2d 0%, #3d3d3d 100%); padding: 4rem 0; margin-top: 4rem; border-radius: 20px; border: 1px solid rgba(0, 212, 255, 0.2);">
+<div style="background: linear-gradient(135deg, #2d2d2d 0%, #3d3d3d 100%); padding: 4rem 0; margin-top: 4rem; border-radius: 20px; border: 1px solid rgba(191, 64, 255, 0.3);">
   <div class="wrapper" style="text-align: center;">
-    <h2 style="color: #00d4ff;">About the Creator</h2>
+    <h2 style="color: #bf40ff; text-shadow: 0 0 15px rgba(191, 64, 255, 0.5);">About the Creator</h2>
     <p style="font-size: 1.1rem; max-width: 600px; margin: 0 auto; line-height: 1.6; color: #f8f9fa;">
       GlowStatus is developed by <a href="https://github.com/{{ site.github_username }}">{{ site.github_username }}</a>, 
       a passionate developer dedicated to creating tools that enhance productivity and user experience. 
@@ -70,7 +70,7 @@ title: Home
       <a href="https://github.com/{{ site.github_username }}" class="btn btn-secondary">Follow on GitHub</a>
     </div>
     
-    <h3 style="margin-top: 3rem; color: #00d4ff;">Support the Project</h3>
+    <h3 style="margin-top: 3rem; color: #bf40ff; text-shadow: 0 0 10px rgba(191, 64, 255, 0.4);">Support the Project</h3>
     <p style="color: #f8f9fa;">If you find GlowStatus useful, consider:</p>
     <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #f8f9fa;">
       <li>⭐ Starring the repository on GitHub</li>
@@ -83,7 +83,7 @@ title: Home
 
 <div style="text-align: center; padding: 3rem 0; background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); color: white; margin: 4rem -15px 0 -15px;">
   <div class="wrapper">
-    <h2 style="color: #00d4ff;">Ready to Get Started?</h2>
+    <h2 style="color: #bf40ff; text-shadow: 0 0 15px rgba(191, 64, 255, 0.5);">Ready to Get Started?</h2>
     <p style="font-size: 1.1rem; margin-bottom: 2rem;">Download GlowStatus today and transform your desktop experience.</p>
     <a href="https://github.com/{{ site.repository }}/releases" class="btn btn-primary">Download Now</a>
   </div>
