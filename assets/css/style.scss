@@ -120,18 +120,15 @@ body {
   font-weight: 600;
   transition: all 0.3s ease;
   border: 2px solid var(--glow-purple);
-  background: var(--glow-pink);
-  background: 
-    linear-gradient(45deg, var(--glow-pink), rgba(255, 20, 147, 0.8)),
-    linear-gradient(45deg, var(--glow-primary), var(--glow-secondary));
-  color: white !important;
+  background: linear-gradient(45deg, var(--glow-primary), var(--glow-secondary));
+  color: var(--glow-pink) !important;
   box-shadow: 0 4px 15px rgba(191, 64, 255, 0.3);
-  text-shadow: 0 0 8px rgba(255, 20, 147, 0.8), 0 0 15px rgba(255, 255, 255, 0.5);
+  text-shadow: 0 0 8px rgba(255, 20, 147, 0.8);
 }
 
-/* Ensure button text is always white to show against gradient */
+/* Ensure button text is always pink to match logo */
 .btn, .btn-primary, .btn-secondary {
-  color: white !important;
+  color: var(--glow-pink) !important;
 }
 
 .btn:hover,
@@ -143,9 +140,9 @@ body {
 .btn-secondary:hover,
 .btn-secondary:active,
 .btn-secondary:focus {
-  transform: translateY(-2px);
-  /* Keep same background and colors - just the press effect */
-  box-shadow: 0 8px 25px rgba(255, 20, 147, 0.4);
+  /* Keep same background and colors - just add depress effect */
+  transform: translateY(2px);
+  box-shadow: 0 2px 8px rgba(191, 64, 255, 0.3);
   text-decoration: none;
 }
 
