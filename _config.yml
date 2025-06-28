@@ -1,0 +1,47 @@
+# Jekyll configuration for GlowStatus Site
+title: "GlowStatus"
+description: "A dynamic status tracker for your desktop"
+url: "https://glowstatus.app"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Theme
+theme: minima
+
+# Social links
+github_username: Severswoed
+repository: Severswoed/GlowStatus
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .bundle
+  - .sass-cache
+  - .jekyll-cache
+  - .jekyll-metadata
+
+# Navigation
+header_pages:
+  - index.md
+  - terms.md
+  - privacy.md
+
+# Google Analytics (add your tracking ID if needed)
+# google_analytics: 
+
+# Custom variables
+app_name: "GlowStatus"
+app_version: "1.0.0"
+company_name: "GlowStatus"
+contact_email: "contact@glowstatus.app"

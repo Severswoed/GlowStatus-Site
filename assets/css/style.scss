@@ -1,0 +1,216 @@
+---
+---
+
+@import "minima";
+
+/* GlowStatus Custom Styles */
+/* Color scheme inspired by the GlowStatus logo */
+:root {
+  --glow-primary: #00d4ff; /* Bright cyan from logo */
+  --glow-secondary: #0099cc; /* Darker cyan */
+  --glow-accent: #ff6b35; /* Orange accent */
+  --glow-dark: #1a1a1a; /* Dark background */
+  --glow-light: #f8f9fa; /* Light text */
+  --glow-gray: #6c757d; /* Gray text */
+}
+
+/* Header styling */
+.site-header {
+  background: linear-gradient(135deg, var(--glow-dark) 0%, #2d2d2d 100%);
+  border-top: 5px solid var(--glow-primary);
+  box-shadow: 0 2px 10px rgba(0, 212, 255, 0.2);
+}
+
+.site-title, .site-title:visited {
+  color: var(--glow-primary) !important;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+}
+
+.site-nav .page-link {
+  color: var(--glow-light) !important;
+  transition: all 0.3s ease;
+}
+
+.site-nav .page-link:hover {
+  color: var(--glow-primary) !important;
+  text-shadow: 0 0 5px rgba(0, 212, 255, 0.5);
+}
+
+/* Main content */
+body {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page-content {
+  padding: 2rem 0;
+}
+
+/* Hero section for home page */
+.hero {
+  text-align: center;
+  padding: 4rem 0;
+  background: linear-gradient(135deg, var(--glow-dark) 0%, #2d2d2d 100%);
+  color: var(--glow-light);
+  margin: -2rem -15px 2rem -15px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--glow-primary);
+  text-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.logo-container {
+  margin: 2rem 0;
+}
+
+.logo {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 0 20px rgba(0, 212, 255, 0.3));
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, var(--glow-primary), var(--glow-secondary));
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 212, 255, 0.4);
+  color: white;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--glow-primary);
+  border: 2px solid var(--glow-primary);
+}
+
+.btn-secondary:hover {
+  background: var(--glow-primary);
+  color: white;
+  text-decoration: none;
+}
+
+/* Feature sections */
+.features {
+  padding: 4rem 0;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid var(--glow-primary);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+}
+
+.feature-card h3 {
+  color: var(--glow-secondary);
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+.site-footer {
+  background: var(--glow-dark);
+  color: var(--glow-light);
+  padding: 2rem 0;
+}
+
+.footer-col-wrapper {
+  color: var(--glow-light);
+}
+
+.footer-col a {
+  color: var(--glow-primary);
+}
+
+.footer-col a:hover {
+  color: var(--glow-secondary);
+  text-decoration: none;
+}
+
+/* Content styling */
+.post-content h1, .post-content h2, .post-content h3 {
+  color: var(--glow-secondary);
+}
+
+.post-content h1 {
+  border-bottom: 2px solid var(--glow-primary);
+  padding-bottom: 0.5rem;
+}
+
+/* Links */
+a {
+  color: var(--glow-secondary);
+}
+
+a:hover {
+  color: var(--glow-primary);
+}
+
+/* Code blocks */
+pre, code {
+  background: var(--glow-dark);
+  color: var(--glow-light);
+  border: 1px solid var(--glow-primary);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero {
+    padding: 2rem 0;
+  }
+  
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .logo {
+    max-width: 300px;
+  }
+}
