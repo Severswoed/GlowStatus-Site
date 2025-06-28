@@ -103,9 +103,9 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   animation: rainbow-trail 12s linear infinite;
-  filter: drop-shadow(0 0 15px rgba(255, 105, 180, 0.7)) 
-          drop-shadow(0 0 25px rgba(64, 224, 208, 0.5)) 
-          drop-shadow(0 0 35px rgba(138, 43, 226, 0.4));
+  filter: drop-shadow(0 0 8px rgba(255, 105, 180, 0.4)) 
+          drop-shadow(0 0 15px rgba(64, 224, 208, 0.3)) 
+          drop-shadow(0 0 20px rgba(138, 43, 226, 0.2));
   font-weight: 600;
   letter-spacing: 1px;
   text-align: center;
@@ -158,7 +158,7 @@ body {
   background: transparent;
   color: #C228FC !important;
   box-shadow: 0 4px 15px rgba(191, 64, 255, 0.3);
-  text-shadow: 0 0 15px rgba(194, 40, 252, 0.8), 0 0 25px rgba(194, 40, 252, 0.6), 0 0 35px rgba(194, 40, 252, 0.4);
+  text-shadow: 0 0 8px rgba(194, 40, 252, 0.5), 0 0 15px rgba(194, 40, 252, 0.3);
 }
 
 /* Comprehensive button styling - catches ALL buttons on the page */
@@ -179,7 +179,7 @@ a.btn, a.btn-primary, a.btn-secondary,
   background: transparent !important;
   color: #C228FC !important;
   box-shadow: 0 4px 15px rgba(191, 64, 255, 0.3);
-  text-shadow: 0 0 15px rgba(194, 40, 252, 0.8), 0 0 25px rgba(194, 40, 252, 0.6), 0 0 35px rgba(194, 40, 252, 0.4);
+  text-shadow: 0 0 8px rgba(194, 40, 252, 0.5), 0 0 15px rgba(194, 40, 252, 0.3);
 }
 
 /* Extra specific rules for bottom section buttons */
@@ -206,7 +206,7 @@ div[style*="margin-top: 2rem"] a.btn-secondary {
   background: transparent !important;
   color: #C228FC !important;
   box-shadow: 0 4px 15px rgba(191, 64, 255, 0.3) !important;
-  text-shadow: 0 0 15px rgba(194, 40, 252, 0.8), 0 0 25px rgba(194, 40, 252, 0.6), 0 0 35px rgba(194, 40, 252, 0.4) !important;
+  text-shadow: 0 0 8px rgba(194, 40, 252, 0.5), 0 0 15px rgba(194, 40, 252, 0.3) !important;
 }
 
 /* Comprehensive hover styling for ALL buttons */
@@ -232,8 +232,8 @@ a[class*="btn"]:hover, a[class*="btn"]:active, a[class*="btn"]:focus,
   background: transparent !important;
   color: #C228FC !important;
   border: 2px solid var(--glow-purple) !important;
-  text-shadow: 0 0 15px rgba(194, 40, 252, 0.8), 0 0 25px rgba(194, 40, 252, 0.6), 0 0 35px rgba(194, 40, 252, 0.4) !important;
-  filter: drop-shadow(0 0 15px rgba(191, 64, 255, 0.6)) drop-shadow(0 0 25px rgba(191, 64, 255, 0.4)) !important;
+  text-shadow: 0 0 8px rgba(194, 40, 252, 0.5), 0 0 15px rgba(194, 40, 252, 0.3) !important;
+  filter: drop-shadow(0 0 10px rgba(191, 64, 255, 0.4)) drop-shadow(0 0 20px rgba(191, 64, 255, 0.2)) !important;
 }
 
 /* Extra specific hover rules for bottom section buttons */
@@ -279,8 +279,8 @@ div[style*="margin-top: 2rem"] a.btn-secondary:focus {
   background: transparent !important;
   color: #C228FC !important;
   border: 2px solid var(--glow-purple) !important;
-  text-shadow: 0 0 15px rgba(194, 40, 252, 0.8), 0 0 25px rgba(194, 40, 252, 0.6), 0 0 35px rgba(194, 40, 252, 0.4) !important;
-  filter: drop-shadow(0 0 15px rgba(191, 64, 255, 0.6)) drop-shadow(0 0 25px rgba(191, 64, 255, 0.4)) !important;
+  text-shadow: 0 0 8px rgba(194, 40, 252, 0.5), 0 0 15px rgba(194, 40, 252, 0.3) !important;
+  filter: drop-shadow(0 0 10px rgba(191, 64, 255, 0.4)) drop-shadow(0 0 20px rgba(191, 64, 255, 0.2)) !important;
 }
 
 /* Feature sections */
@@ -313,7 +313,7 @@ div[style*="margin-top: 2rem"] a.btn-secondary:focus {
 .feature-card h3 {
   color: #C228FC !important;
   margin-bottom: 1rem;
-  text-shadow: 0 0 15px rgba(194, 40, 252, 0.8), 0 0 25px rgba(194, 40, 252, 0.6), 0 0 35px rgba(194, 40, 252, 0.4) !important;
+  text-shadow: 0 0 8px rgba(194, 40, 252, 0.5), 0 0 15px rgba(194, 40, 252, 0.3) !important;
 }
 
 /* Footer */
