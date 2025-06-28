@@ -146,13 +146,13 @@ For material changes to this policy, we will:
 If you have any questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please contact us:
 
 - **Email**: {{ site.contact_email }}
-- **GitHub Issues**: [{{ site.repository }}/issues](https://github.com/{{ site.repository }}/issues)
-- **Repository**: [{{ site.repository }}](https://github.com/{{ site.repository }})
+- **GitHub Issues**: [{{ site.repository }}/issues](https://github.com/{{ site.repository }}/issues){:target="_blank" rel="noopener noreferrer"}
+- **Repository**: [{{ site.repository }}](https://github.com/{{ site.repository }}){:target="_blank" rel="noopener noreferrer"}
 
 ## 12. Google OAuth Specific Information
 
 ### 12.1 Google API Services
-When using Google OAuth features, GlowStatus's use and transfer of information received from Google APIs adheres to the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the Limited Use requirements.
+When using Google OAuth features, GlowStatus's use and transfer of information received from Google APIs adheres to the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy){:target="_blank" rel="noopener noreferrer"}, including the Limited Use requirements.
 
 ### 12.2 Scope of Access
 We only request access to the minimum necessary Google account information required for the specific features you enable.

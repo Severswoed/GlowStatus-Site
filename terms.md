@@ -80,7 +80,7 @@ We may terminate your license to use the Software if you violate these Terms.
 
 ## 10. Open Source
 
-GlowStatus is an open-source project. The source code is available at [{{ site.repository }}](https://github.com/{{ site.repository }}) and is subject to the license terms specified in the repository.
+GlowStatus is an open-source project. The source code is available at [{{ site.repository }}](https://github.com/{{ site.repository }}){:target="_blank" rel="noopener noreferrer"} and is subject to the license terms specified in the repository.
 
 ## 11. Governing Law
 
@@ -91,7 +91,7 @@ These Terms are governed by and construed in accordance with the laws of [Your J
 If you have any questions about these Terms, please contact us at:
 
 - **Email**: {{ site.contact_email }}
-- **GitHub**: [{{ site.repository }}](https://github.com/{{ site.repository }})
+- **GitHub**: [{{ site.repository }}](https://github.com/{{ site.repository }}){:target="_blank" rel="noopener noreferrer"}
 
 ## 13. Severability
 

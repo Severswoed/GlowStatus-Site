@@ -2,8 +2,8 @@
 
 Official website for GlowStatus - Light up your availability.
 
-🌐 **Live Site**: [www.glowstatus.app](https://glowstatus.app)
-📱 **Desktop App**: [GlowStatus Repository](https://github.com/Severswoed/GlowStatus)
+🌐 **Live Site**: [www.glowstatus.app](https://glowstatus.app){:target="_blank" rel="noopener noreferrer"}
+📱 **Desktop App**: [GlowStatus Repository](https://github.com/Severswoed/GlowStatus){:target="_blank" rel="noopener noreferrer"}
 
 ## About
 

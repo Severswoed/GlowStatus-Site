@@ -328,13 +328,14 @@ div[style*="margin-top: 2rem"] a.btn-secondary:focus {
 }
 
 .footer-col a {
-  color: var(--glow-electric-blue) !important;
+  color: #C228FC !important;
   transition: all 0.3s ease;
+  text-shadow: 0 0 5px rgba(194, 40, 252, 0.3);
 }
 
 .footer-col a:hover {
-  color: var(--glow-pink) !important;
-  text-shadow: 0 0 8px rgba(255, 20, 147, 0.6);
+  color: #FD4AFB !important;
+  text-shadow: 0 0 8px rgba(194, 40, 252, 0.6), 0 0 15px rgba(194, 40, 252, 0.4);
   text-decoration: none;
 }
 
@@ -369,38 +370,42 @@ strong, b {
 
 /* Links */
 a {
-  color: var(--glow-electric-blue) !important;
+  color: #C228FC !important;
   text-decoration: none;
   transition: all 0.3s ease;
+  text-shadow: 0 0 5px rgba(194, 40, 252, 0.3);
 }
 
 a:hover {
-  color: var(--glow-pink) !important;
-  text-shadow: 0 0 8px rgba(255, 20, 147, 0.6);
+  color: #FD4AFB !important;
+  text-shadow: 0 0 8px rgba(194, 40, 252, 0.6), 0 0 15px rgba(194, 40, 252, 0.4);
   text-decoration: none;
 }
 
 /* Special link styling for better visibility */
 a:visited {
-  color: var(--glow-purple) !important;
+  color: #9B1FD4 !important;
+  text-shadow: 0 0 5px rgba(155, 31, 212, 0.3);
 }
 
 a:visited:hover {
-  color: var(--glow-pink) !important;
+  color: #FD4AFB !important;
+  text-shadow: 0 0 8px rgba(194, 40, 252, 0.6), 0 0 15px rgba(194, 40, 252, 0.4);
 }
 
 /* Enhanced link visibility for content areas */
 .post-content a, .wrapper a, .hero a:not(.btn) {
-  color: var(--glow-electric-blue) !important;
+  color: #C228FC !important;
   font-weight: 500;
-  border-bottom: 1px solid rgba(0, 191, 255, 0.3);
+  border-bottom: 1px solid rgba(194, 40, 252, 0.3);
   transition: all 0.3s ease;
+  text-shadow: 0 0 5px rgba(194, 40, 252, 0.3);
 }
 
 .post-content a:hover, .wrapper a:hover, .hero a:not(.btn):hover {
-  color: var(--glow-pink) !important;
-  border-bottom: 1px solid rgba(255, 20, 147, 0.6);
-  text-shadow: 0 0 8px rgba(255, 20, 147, 0.4);
+  color: #FD4AFB !important;
+  border-bottom: 1px solid rgba(194, 40, 252, 0.6);
+  text-shadow: 0 0 8px rgba(194, 40, 252, 0.6), 0 0 15px rgba(194, 40, 252, 0.4);
 }
 
 /* Code blocks */
