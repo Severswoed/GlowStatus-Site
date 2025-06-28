@@ -3,6 +3,12 @@
 
 @import "minima";
 
+/* Force dark theme override */
+html, body {
+  background: #1a1a1a !important;
+  color: #f8f9fa !important;
+}
+
 /* GlowStatus Custom Styles */
 /* Color scheme inspired by the GlowStatus logo */
 :root {
@@ -39,13 +45,19 @@
 
 /* Main content */
 body {
-  background: linear-gradient(135deg, var(--glow-dark) 0%, #2d2d2d 100%);
-  color: var(--glow-light);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, var(--glow-dark) 0%, #2d2d2d 100%) !important;
+  color: var(--glow-light) !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  min-height: 100vh !important;
 }
 
 .page-content {
   padding: 2rem 0;
+  background: transparent !important;
+}
+
+.wrapper {
+  background: transparent !important;
 }
 
 /* Hero section for home page */
