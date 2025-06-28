@@ -121,7 +121,7 @@ body {
   transition: all 0.3s ease;
   border: 2px solid var(--glow-purple);
   background: linear-gradient(45deg, var(--glow-primary), var(--glow-secondary));
-  color: var(--glow-pink);
+  color: var(--glow-pink) !important;
   box-shadow: 0 4px 15px rgba(191, 64, 255, 0.3);
   text-shadow: 0 0 5px rgba(255, 20, 147, 0.3);
 }
@@ -137,7 +137,7 @@ body {
 .btn-secondary:focus {
   transform: translateY(-2px);
   background: linear-gradient(45deg, var(--glow-primary), var(--glow-secondary));
-  color: var(--glow-purple);
+  color: var(--glow-purple) !important;
   border: 2px solid var(--glow-pink);
   box-shadow: 0 8px 25px rgba(255, 20, 147, 0.4);
   text-decoration: none;
