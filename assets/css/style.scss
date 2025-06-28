@@ -87,27 +87,62 @@ body {
 }
 
 .hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  color: var(--glow-primary);
-  text-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+  display: none; /* Hide title completely */
 }
 
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+.hero p, .hero .hero-tagline {
+  font-size: 1.8rem;
+  margin: 2rem 0 3rem 0;
   opacity: 0.9;
+  background: linear-gradient(90deg, 
+    #ff0080, #ff4040, #ff8c00, #ffb347, #40e0d0, 
+    #00ff7f, #8a2be2, #ff69b4, #00bfff, #ff0080, 
+    #ff4040, #ff8c00, #ffb347, #40e0d0, #00ff7f);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: rainbow-trail 12s linear infinite;
+  filter: drop-shadow(0 0 15px rgba(255, 105, 180, 0.7)) 
+          drop-shadow(0 0 25px rgba(64, 224, 208, 0.5)) 
+          drop-shadow(0 0 35px rgba(138, 43, 226, 0.4));
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+@keyframes rainbow-trail {
+  0% {
+    background-position: 200% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
 }
 
 .logo-container {
-  margin: 2rem 0;
+  margin: 2rem 0 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
-  max-width: 400px;
-  width: 100%;
-  height: auto;
-  filter: drop-shadow(0 0 20px rgba(0, 212, 255, 0.3));
+  max-width: 350px;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background-color: rgba(0, 212, 255, 0.1);
+  background-size: 300px 300px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 3px solid rgba(0, 212, 255, 0.3);
+  filter: drop-shadow(0 0 20px rgba(0, 212, 255, 0.6)) drop-shadow(0 0 40px rgba(0, 212, 255, 0.4)) drop-shadow(0 0 60px rgba(0, 212, 255, 0.2));
+  transition: filter 0.3s ease;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 30px rgba(0, 212, 255, 0.8)) drop-shadow(0 0 50px rgba(0, 212, 255, 0.5)) drop-shadow(0 0 80px rgba(0, 212, 255, 0.3));
 }
 
 /* Buttons */
@@ -120,30 +155,132 @@ body {
   font-weight: 600;
   transition: all 0.3s ease;
   border: 2px solid var(--glow-purple);
-  background: linear-gradient(45deg, var(--glow-primary), var(--glow-secondary));
-  color: var(--glow-pink) !important;
+  background: transparent;
+  color: #C228FC !important;
   box-shadow: 0 4px 15px rgba(191, 64, 255, 0.3);
-  text-shadow: 0 0 8px rgba(255, 20, 147, 0.8), 0 0 15px rgba(255, 20, 147, 0.6);
+  text-shadow: 0 0 15px rgba(194, 40, 252, 0.8), 0 0 25px rgba(194, 40, 252, 0.6), 0 0 35px rgba(194, 40, 252, 0.4);
 }
 
-/* Ensure button text is always pink to match logo */
-.btn, .btn-primary, .btn-secondary {
-  color: var(--glow-pink) !important;
+/* Comprehensive button styling - catches ALL buttons on the page */
+.btn, .btn-primary, .btn-secondary,
+a.btn, a.btn-primary, a.btn-secondary,
+.hero .btn, .hero .btn-primary, .hero .btn-secondary,
+.hero a.btn, .hero a.btn-primary, .hero a.btn-secondary,
+[class*="btn"], a[class*="btn"],
+.hero [class*="btn"], .hero a[class*="btn"] {
+  display: inline-block;
+  padding: 12px 30px;
+  margin: 10px;
+  text-decoration: none !important;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid var(--glow-purple) !important;
+  background: transparent !important;
+  color: #C228FC !important;
+  box-shadow: 0 4px 15px rgba(191, 64, 255, 0.3);
+  text-shadow: 0 0 15px rgba(194, 40, 252, 0.8), 0 0 25px rgba(194, 40, 252, 0.6), 0 0 35px rgba(194, 40, 252, 0.4);
 }
 
-.btn:hover,
-.btn:active,
-.btn:focus,
-.btn-primary:hover,
-.btn-primary:active,
-.btn-primary:focus,
-.btn-secondary:hover,
-.btn-secondary:active,
-.btn-secondary:focus {
-  /* Keep same background and colors - just add depress effect */
-  transform: translateY(2px);
-  box-shadow: 0 2px 8px rgba(191, 64, 255, 0.3);
-  text-decoration: none;
+/* Extra specific rules for bottom section buttons */
+div[style*="text-align: center"] .btn,
+div[style*="text-align: center"] .btn-primary,
+div[style*="text-align: center"] .btn-secondary,
+div[style*="text-align: center"] a.btn,
+div[style*="text-align: center"] a.btn-primary,
+div[style*="text-align: center"] a.btn-secondary,
+div[style*="margin-top: 2rem"] .btn,
+div[style*="margin-top: 2rem"] .btn-primary, 
+div[style*="margin-top: 2rem"] .btn-secondary,
+div[style*="margin-top: 2rem"] a.btn,
+div[style*="margin-top: 2rem"] a.btn-primary,
+div[style*="margin-top: 2rem"] a.btn-secondary {
+  display: inline-block !important;
+  padding: 12px 30px !important;
+  margin: 10px !important;
+  text-decoration: none !important;
+  border-radius: 25px !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+  border: 2px solid var(--glow-purple) !important;
+  background: transparent !important;
+  color: #C228FC !important;
+  box-shadow: 0 4px 15px rgba(191, 64, 255, 0.3) !important;
+  text-shadow: 0 0 15px rgba(194, 40, 252, 0.8), 0 0 25px rgba(194, 40, 252, 0.6), 0 0 35px rgba(194, 40, 252, 0.4) !important;
+}
+
+/* Comprehensive hover styling for ALL buttons */
+.btn:hover, .btn:active, .btn:focus,
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus,
+.btn-secondary:hover, .btn-secondary:active, .btn-secondary:focus,
+a.btn:hover, a.btn:active, a.btn:focus,
+a.btn-primary:hover, a.btn-primary:active, a.btn-primary:focus,
+a.btn-secondary:hover, a.btn-secondary:active, a.btn-secondary:focus,
+.hero .btn:hover, .hero .btn:active, .hero .btn:focus,
+.hero .btn-primary:hover, .hero .btn-primary:active, .hero .btn-primary:focus,
+.hero .btn-secondary:hover, .hero .btn-secondary:active, .hero .btn-secondary:focus,
+.hero a.btn:hover, .hero a.btn:active, .hero a.btn:focus,
+.hero a.btn-primary:hover, .hero a.btn-primary:active, .hero a.btn-primary:focus,
+.hero a.btn-secondary:hover, .hero a.btn-secondary:active, .hero a.btn-secondary:focus,
+[class*="btn"]:hover, [class*="btn"]:active, [class*="btn"]:focus,
+a[class*="btn"]:hover, a[class*="btn"]:active, a[class*="btn"]:focus,
+.hero [class*="btn"]:hover, .hero [class*="btn"]:active, .hero [class*="btn"]:focus,
+.hero a[class*="btn"]:hover, .hero a[class*="btn"]:active, .hero a[class*="btn"]:focus {
+  transform: translateY(2px) !important;
+  box-shadow: 0 2px 8px rgba(191, 64, 255, 0.3) !important;
+  text-decoration: none !important;
+  background: transparent !important;
+  color: #C228FC !important;
+  border: 2px solid var(--glow-purple) !important;
+  text-shadow: 0 0 15px rgba(194, 40, 252, 0.8), 0 0 25px rgba(194, 40, 252, 0.6), 0 0 35px rgba(194, 40, 252, 0.4) !important;
+  filter: drop-shadow(0 0 15px rgba(191, 64, 255, 0.6)) drop-shadow(0 0 25px rgba(191, 64, 255, 0.4)) !important;
+}
+
+/* Extra specific hover rules for bottom section buttons */
+div[style*="text-align: center"] .btn:hover,
+div[style*="text-align: center"] .btn:active,
+div[style*="text-align: center"] .btn:focus,
+div[style*="text-align: center"] .btn-primary:hover,
+div[style*="text-align: center"] .btn-primary:active,
+div[style*="text-align: center"] .btn-primary:focus,
+div[style*="text-align: center"] .btn-secondary:hover,
+div[style*="text-align: center"] .btn-secondary:active,
+div[style*="text-align: center"] .btn-secondary:focus,
+div[style*="text-align: center"] a.btn:hover,
+div[style*="text-align: center"] a.btn:active,
+div[style*="text-align: center"] a.btn:focus,
+div[style*="text-align: center"] a.btn-primary:hover,
+div[style*="text-align: center"] a.btn-primary:active,
+div[style*="text-align: center"] a.btn-primary:focus,
+div[style*="text-align: center"] a.btn-secondary:hover,
+div[style*="text-align: center"] a.btn-secondary:active,
+div[style*="text-align: center"] a.btn-secondary:focus,
+div[style*="margin-top: 2rem"] .btn:hover,
+div[style*="margin-top: 2rem"] .btn:active,
+div[style*="margin-top: 2rem"] .btn:focus,
+div[style*="margin-top: 2rem"] .btn-primary:hover,
+div[style*="margin-top: 2rem"] .btn-primary:active,
+div[style*="margin-top: 2rem"] .btn-primary:focus,
+div[style*="margin-top: 2rem"] .btn-secondary:hover,
+div[style*="margin-top: 2rem"] .btn-secondary:active,
+div[style*="margin-top: 2rem"] .btn-secondary:focus,
+div[style*="margin-top: 2rem"] a.btn:hover,
+div[style*="margin-top: 2rem"] a.btn:active,
+div[style*="margin-top: 2rem"] a.btn:focus,
+div[style*="margin-top: 2rem"] a.btn-primary:hover,
+div[style*="margin-top: 2rem"] a.btn-primary:active,
+div[style*="margin-top: 2rem"] a.btn-primary:focus,
+div[style*="margin-top: 2rem"] a.btn-secondary:hover,
+div[style*="margin-top: 2rem"] a.btn-secondary:active,
+div[style*="margin-top: 2rem"] a.btn-secondary:focus {
+  transform: translateY(2px) !important;
+  box-shadow: 0 2px 8px rgba(191, 64, 255, 0.3) !important;
+  text-decoration: none !important;
+  background: transparent !important;
+  color: #C228FC !important;
+  border: 2px solid var(--glow-purple) !important;
+  text-shadow: 0 0 15px rgba(194, 40, 252, 0.8), 0 0 25px rgba(194, 40, 252, 0.6), 0 0 35px rgba(194, 40, 252, 0.4) !important;
+  filter: drop-shadow(0 0 15px rgba(191, 64, 255, 0.6)) drop-shadow(0 0 25px rgba(191, 64, 255, 0.4)) !important;
 }
 
 /* Feature sections */
@@ -174,9 +311,9 @@ body {
 }
 
 .feature-card h3 {
-  color: var(--glow-purple);
+  color: #C228FC !important;
   margin-bottom: 1rem;
-  text-shadow: 0 0 10px rgba(191, 64, 255, 0.4);
+  text-shadow: 0 0 15px rgba(194, 40, 252, 0.8), 0 0 25px rgba(194, 40, 252, 0.6), 0 0 35px rgba(194, 40, 252, 0.4) !important;
 }
 
 /* Footer */
@@ -364,8 +501,9 @@ body {
 
 /* Responsive design */
 @media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2rem;
+  .hero .hero-tagline, .hero p {
+    font-size: 1.4rem !important;
+    margin: 1.5rem 0 2rem 0 !important;
   }
   
   .hero {
@@ -378,5 +516,11 @@ body {
   
   .logo {
     max-width: 300px;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .logo-container {
+    margin: 1rem 0 0.5rem 0;
   }
 }
