@@ -1,6 +1,6 @@
 # Jekyll configuration for GlowStatus Site
 title: "GlowStatus"
-description: "A dynamic status tracker for your desktop"
+description: "Light up your availability"
 url: "https://www.glowstatus.app"
 baseurl: ""
 

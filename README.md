@@ -1,6 +1,6 @@
 # GlowStatus-Site
 
-Official website for GlowStatus - A dynamic status tracker for your desktop.
+Official website for GlowStatus - Light up your availability.
 
 🌐 **Live Site**: [www.glowstatus.app](https://glowstatus.app)
 📱 **Desktop App**: [GlowStatus Repository](https://github.com/Severswoed/GlowStatus)
@@ -12,6 +12,12 @@ This Jekyll-powered website serves as the official landing page for GlowStatus, 
 - 🏠 **Homepage** - App overview, features, and download links
 - 📋 **Terms of Service** - Legal terms for app usage
 - 🔒 **Privacy Policy** - Privacy practices and OAuth information
+
+## Support the Project
+
+If you enjoy GlowStatus and would like to buy me a coffee, you can support the project:
+
+☕ **CashApp**: $severswoed
 
 ## Local Development
 

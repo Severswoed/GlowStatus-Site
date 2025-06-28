@@ -6,7 +6,7 @@ title: Home
 <div class="hero">
   <div class="wrapper">
     <h1>{{ site.app_name }}</h1>
-    <p>A dynamic status tracker for your desktop</p>
+    <p>Light up your availability</p>
     
     <div class="logo-container">
       <img src="https://raw.githubusercontent.com/Severswoed/GlowStatus/main/img/GlowStatus_TagLine.png" alt="GlowStatus Logo" class="logo">
