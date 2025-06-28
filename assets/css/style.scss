@@ -9,6 +9,17 @@ html, body {
   color: #f8f9fa !important;
 }
 
+/* Ensure all major containers use dark theme */
+.page-content, .post-content, .wrapper, main, article {
+  background: transparent !important;
+  color: #f8f9fa !important;
+}
+
+/* Override any white backgrounds */
+div, section, article, main {
+  background-color: transparent !important;
+}
+
 /* GlowStatus Custom Styles */
 /* Color scheme inspired by the GlowStatus logo */
 :root {
@@ -185,8 +196,8 @@ body {
 }
 
 /* Content styling */
-.post-content h1, .post-content h2, .post-content h3 {
-  color: var(--glow-primary);
+.post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
+  color: var(--glow-primary) !important;
 }
 
 .post-content h1 {
@@ -194,8 +205,23 @@ body {
   padding-bottom: 0.5rem;
 }
 
-.post-content {
-  color: var(--glow-light);
+.post-content, .post-content p, .post-content li, .post-content div {
+  color: var(--glow-light) !important;
+  background: transparent !important;
+}
+
+/* Ensure all text content is light colored */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--glow-primary) !important;
+}
+
+p, li, span, div, td, th {
+  color: var(--glow-light) !important;
+}
+
+/* Strong emphasis styling */
+strong, b {
+  color: var(--glow-primary) !important;
 }
 
 /* Links */
@@ -262,6 +288,46 @@ input, textarea, select {
 input:focus, textarea:focus, select:focus {
   border-color: var(--glow-primary);
   box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+}
+
+/* Minima theme overrides for dark theme */
+.minima .page-content {
+  background: transparent !important;
+}
+
+.minima .wrapper {
+  background: transparent !important;
+}
+
+.minima .post-content {
+  background: transparent !important;
+  color: var(--glow-light) !important;
+}
+
+/* Force override any remaining white backgrounds */
+* {
+  background-color: transparent !important;
+}
+
+/* Re-apply necessary backgrounds */
+body {
+  background: linear-gradient(135deg, var(--glow-dark) 0%, #2d2d2d 100%) !important;
+}
+
+.site-header {
+  background: linear-gradient(135deg, var(--glow-dark) 0%, #2d2d2d 100%) !important;
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--glow-dark) 0%, #2d2d2d 100%) !important;
+}
+
+.feature-card {
+  background: linear-gradient(135deg, #2d2d2d 0%, #3d3d3d 100%) !important;
+}
+
+.site-footer {
+  background: var(--glow-dark) !important;
 }
 
 /* Responsive design */
